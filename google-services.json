@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "967809101067",
+    "project_id": "fooddeliveryboy-24c24",
+    "storage_bucket": "fooddeliveryboy-24c24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967809101067:android:0d0f1ccfc2069b5f80860e",
+        "android_client_info": {
+          "package_name": "com.prometteur.fooddeliveryboy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "967809101067-6f6pgr07m9rrc2uth36vvt80t18i9rdk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prometteur.fooddeliveryboy",
+            "certificate_hash": "9d3796d6d4e67484c21b2ca05a59d53b4ddb1215"
+          }
+        },
+        {
+          "client_id": "967809101067-9n2u9tg0gtsllmpq73bjjfp7ifro52bl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmIo74Gc6f2RP79Lqf8MjL401vjQBN8O8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "967809101067-9n2u9tg0gtsllmpq73bjjfp7ifro52bl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
