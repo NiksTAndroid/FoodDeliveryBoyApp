@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginRight="@dimen/_8sdp"
+    android:layout_marginLeft="@dimen/_8sdp"
+    android:layout_marginTop="@dimen/_8sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.prometteur.fooddeliveryboy.Utils.PoppinsRegularTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status"
+        android:textColor="@color/black_65"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvStatus"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        />
+
+    <com.prometteur.fooddeliveryboy.Utils.PoppinsRegularTextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prepared"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:textColor="@color/blue_148"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/con_EndLayout"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civChef"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/chef_yellowcircle"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvStatus"
+        />
+
+    <com.prometteur.fooddeliveryboy.Utils.CustomTextView
+        android:id="@+id/tvChefName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chef Name"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/black_22"
+        android:layout_marginLeft="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="@id/civChef"
+        app:layout_constraintStart_toEndOf="@id/civChef"
+        />
+
+    <com.prometteur.fooddeliveryboy.Utils.PoppinsRegularTextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Warje Malwadi, Pune"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        app:layout_constraintStart_toEndOf="@id/civChef"
+        app:layout_constraintTop_toBottomOf="@id/tvChefName"
+        app:layout_constraintBottom_toBottomOf="@id/civChef"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_customer"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:src="@drawable/grey_customers_circle"
+        app:layout_constraintStart_toStartOf="@id/tvAddress"
+        app:layout_constraintTop_toBottomOf="@id/civChef"
+        />
+    <com.prometteur.fooddeliveryboy.Utils.PoppinsRegularTextView
+        android:id="@+id/tvTitleCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/customers"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:textColor="@color/black_65"
+        app:layout_constraintStart_toEndOf="@id/civ_customer"
+        app:layout_constraintTop_toTopOf="@id/civ_customer"
+        app:layout_constraintBottom_toBottomOf="@id/civ_customer"
+        />
+
+    <com.prometteur.fooddeliveryboy.Utils.PoppinsRegularTextView
+        android:id="@+id/tvCustomerCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="05"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/maroon_a20"
+        app:layout_constraintStart_toEndOf="@id/tvTitleCustomer"
+        app:layout_constraintTop_toTopOf="@id/tvTitleCustomer"
+        app:layout_constraintBottom_toBottomOf="@id/tvTitleCustomer"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_Calander"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:src="@drawable/grey_calendar_circle"
+        app:layout_constraintStart_toEndOf="@id/tvCustomerCount"
+        app:layout_constraintTop_toTopOf="@id/civ_customer"
+        app:layout_constraintBottom_toBottomOf="@id/civ_customer"
+        />
+    <com.prometteur.fooddeliveryboy.Utils.PoppinsRegularTextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25/06/2021"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:textColor="@color/black_65"
+        app:layout_constraintStart_toEndOf="@id/civ_Calander"
+        app:layout_constraintTop_toTopOf="@id/civ_Calander"
+        app:layout_constraintBottom_toBottomOf="@id/civ_Calander"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/con_EndLayout"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="0dp"
+        android:background="@color/yellow_fee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/view1"
+        >
+
+        <ImageView
+            android:id="@+id/ivShowHide"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/iv_white_arrow_down"
+            android:padding="@dimen/_8sdp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_7b"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/civ_customer"
+        />
+
+    <com.prometteur.fooddeliveryboy.Utils.CustomTextView
+        android:id="@+id/tvTitleOrderList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/customer_order_list"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/black_22"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="@id/civChef"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_OrdersPerDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleOrderList"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:nestedScrollingEnabled="false"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

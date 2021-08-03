@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.prometteur.fooddeliveryboy.Utils.PoppinsRegularTextView
+        android:id="@+id/tvTitleOrderID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_id"
+        android:textSize="@dimen/_11sdp"
+        android:textColor="@color/black_65"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.prometteur.fooddeliveryboy.Utils.PoppinsRegularTextView
+        android:id="@+id/tvOrderID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AM001"
+        android:textColor="@color/maroon_a20"
+        android:textSize="@dimen/_11sdp"
+        android:layout_marginLeft="@dimen/_3sdp"
+        app:layout_constraintStart_toEndOf="@id/tvTitleOrderID"
+        app:layout_constraintTop_toTopOf="@id/tvTitleOrderID"
+        app:layout_constraintBottom_toBottomOf="@id/tvTitleOrderID"
+        />
+
+
+
+    <com.prometteur.fooddeliveryboy.Utils.PoppinsRegularTextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accepted"
+        android:textSize="@dimen/_11sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:textColor="@color/green_56"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTitleOrderID"
+        app:layout_constraintBottom_toBottomOf="@id/tvTitleOrderID"
+        />
+
+    <com.prometteur.fooddeliveryboy.Utils.PoppinsRegularTextView
+        android:id="@+id/tvTitleStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status"
+        android:textSize="@dimen/_11sdp"
+        android:textColor="@color/black_65"
+        android:layout_marginRight="@dimen/_8sdp"
+        app:layout_constraintEnd_toStartOf="@id/tvStatus"
+        app:layout_constraintTop_toTopOf="@id/tvTitleOrderID"
+        app:layout_constraintBottom_toBottomOf="@id/tvTitleOrderID"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civCustProfile"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:src="@drawable/user_profile_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleOrderID"
+        />
+
+    <com.prometteur.fooddeliveryboy.Utils.CustomTextView
+        android:id="@+id/tvCustName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Name"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/black_22"
+        android:layout_marginLeft="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="@id/civCustProfile"
+        app:layout_constraintStart_toEndOf="@id/civCustProfile"
+        />
+
+    <com.prometteur.fooddeliveryboy.Utils.PoppinsRegularTextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Warje Malwadi, Pune"
+        android:textSize="@dimen/_8sdp"
+
+        android:layout_marginLeft="@dimen/_5sdp"
+        app:layout_constraintStart_toEndOf="@id/civCustProfile"
+        app:layout_constraintTop_toBottomOf="@id/tvCustName"
+        app:layout_constraintBottom_toBottomOf="@id/civCustProfile"
+        />
+
+
+    <com.prometteur.fooddeliveryboy.Utils.PoppinsRegularTextView
+        android:id="@+id/tvTitleTotalOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_order_item"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="@id/tvCustName"
+        app:layout_constraintTop_toBottomOf="@id/civCustProfile"
+        />
+
+    <com.prometteur.fooddeliveryboy.Utils.PoppinsRegularTextView
+        android:id="@+id/tvTotalOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="03"
+        android:textColor="@color/maroon_a20"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@id/tvTitleTotalOrder"
+        app:layout_constraintTop_toTopOf="@id/tvTitleTotalOrder"
+        app:layout_constraintBottom_toBottomOf="@id/tvTitleTotalOrder"
+        />
+
+    <com.prometteur.fooddeliveryboy.Utils.PoppinsRegularTextView
+        android:id="@+id/tvTitleTotalPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Payment - "
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintEnd_toStartOf="@id/tvTotalPay"
+        app:layout_constraintTop_toBottomOf="@id/civCustProfile"
+        />
+
+    <com.prometteur.fooddeliveryboy.Utils.PoppinsRegularTextView
+        android:id="@+id/tvTotalPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RS. 150"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/maroon_a20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTitleTotalOrder"
+        app:layout_constraintBottom_toBottomOf="@id/tvTitleTotalOrder"
+        />
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleTotalOrder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/grey"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

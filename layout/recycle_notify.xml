@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/conlayMainNotify"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_lesscurved_white"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civNotify"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/user_profile_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        />
+    <com.prometteur.fooddeliveryboy.Utils.PoppinsRegularTextView
+        android:id="@+id/tvNotifyTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum is simply a dummy text. Lorem ipsum is simply a dummy text"
+        app:layout_constraintTop_toTopOf="@id/civNotify"
+        app:layout_constraintStart_toEndOf="@id/civNotify"
+        android:maxLines="2"
+        android:textColor="@color/black_22"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        />
+
+    <com.prometteur.fooddeliveryboy.Utils.PoppinsRegularTextView
+        android:id="@+id/tvNotifyDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01/07/2021"
+        android:textSize="@dimen/_11sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:textColor="@color/black_65"
+        app:layout_constraintStart_toStartOf="@id/tvNotifyTitle"
+        app:layout_constraintBottom_toBottomOf="@id/civNotify"
+        />
+
+    <com.prometteur.fooddeliveryboy.Utils.PoppinsRegularTextView
+        android:id="@+id/tvNotifyTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="08:00 AM"
+        android:textSize="@dimen/_11sdp"
+        android:textColor="@color/black_65"
+        app:layout_constraintEnd_toEndOf="@id/tvNotifyTitle"
+        app:layout_constraintBottom_toBottomOf="@id/tvNotifyDate"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ivProdImage"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/sampleprofile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <com.prometteur.fooddeliveryboy.Utils.CustomTextView
+        android:id="@+id/tvProdName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prod Name"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/black_22"
+        app:layout_constraintTop_toTopOf="@id/ivProdImage"
+        app:layout_constraintStart_toEndOf="@id/ivProdImage"
+        android:layout_marginLeft="@dimen/_5sdp"
+        />
+    <com.prometteur.fooddeliveryboy.Utils.PoppinsRegularTextView
+        android:id="@+id/tvProdContents"
+        android:layout_width="0dp"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:layout_height="wrap_content"
+        android:text="Served with sambar and chutney."
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="@dimen/_11sdp"
+        android:textColor="@color/black_65"
+        app:layout_constraintEnd_toStartOf="@id/ivVegNonVeg"
+        app:layout_constraintStart_toStartOf="@id/tvProdName"
+        app:layout_constraintTop_toBottomOf="@id/tvProdName"
+        />
+
+    <ImageView
+        android:id="@+id/ivVegNonVeg"
+        android:layout_width="20dp"
+        android:layout_height="0dp"
+        android:src="@drawable/iv_veg"
+        android:layout_marginRight="@dimen/_2sdp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvProdName"
+        app:layout_constraintBottom_toBottomOf="@id/tvProdName"
+        />
+
+    <com.prometteur.fooddeliveryboy.Utils.PoppinsRegularTextView
+        android:id="@+id/tvtitleQTY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/qty"
+        android:textSize="@dimen/_11sdp"
+        android:textColor="@color/black_22"
+        android:layout_marginBottom="@dimen/_2sdp"
+        app:layout_constraintStart_toStartOf="@id/tvProdName"
+        app:layout_constraintBottom_toBottomOf="@id/ivProdImage"
+        />
+
+    <com.prometteur.fooddeliveryboy.Utils.PoppinsRegularTextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:text="2"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/maroon_a20"
+        app:layout_constraintStart_toEndOf="@id/tvtitleQTY"
+        app:layout_constraintTop_toTopOf="@id/tvtitleQTY"
+        app:layout_constraintBottom_toBottomOf="@id/tvtitleQTY"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivProdImage"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

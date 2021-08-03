@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_FF">#FFF</color>
+    <color name="grey">#D3D1D1</color>
+    <color name="greylight">#E6E5E5</color>
+    <color name="greylights">#fafafa</color>
+    <color name="black_22">#222222</color>
+    <color name="black_52">#525252</color>
+    <color name="black_12">#121212</color>
+    <color name="grey_f0">#f0f0f0</color>
+    <color name="grey_7b">#7b7b7b</color>
+    <color name="grey_6564">#656464</color>
+    <color name="maroon_d9">#B3d92027</color>
+    <color name="black_65">#656565</color>
+    <color name="blue_148">#148bc5</color>
+    <color name="black_73">#737373</color>
+    <color name="maroon_a20">#a20a0a</color>
+    <color name="yellow_fee">#feecb7</color>
+    <color name="green_56">#568701</color>
+    <color name="red">#ff0606</color>
+    <color name="blue_1a">#1a85fd</color>
+    <color name="blue_1c">#1c8fc7</color>
+    <color name="green_03b">#03b93e</color>
+    <color name="dustyellow_fbbc07">#fbbc07</color>
+
+</resources>

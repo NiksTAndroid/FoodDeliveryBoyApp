@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.EditProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/ivBackPress"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:src="@drawable/black_back_arrow"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+                <com.prometteur.fooddeliveryboy.Utils.PoppinsRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit_profile"
+                    android:textColor="@color/black_22"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    app:layout_constraintStart_toEndOf="@id/ivBackPress"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBar"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/conlay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bg_8dpcurved_white"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:passwordToggleEnabled="false"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/black"
+
+            >
+
+            <com.prometteur.fooddeliveryboy.Utils.CustomeEditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/name"
+                android:textColor="@color/black"
+
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/grey_7b"
+                android:textSize="@dimen/_14sdp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View
+            android:id="@+id/view1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/blue_1c"
+            android:layout_marginTop="@dimen/_2sdp"
+            app:layout_constraintTop_toBottomOf="@id/tvName"
+            app:layout_constraintStart_toStartOf="@id/tvName"
+            app:layout_constraintEnd_toEndOf="@id/tvName"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/viewAadharCardNum"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:passwordToggleEnabled="false"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            app:layout_constraintTop_toBottomOf="@id/view1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/black"
+            >
+
+            <com.prometteur.fooddeliveryboy.Utils.CustomeEditText
+                android:id="@+id/edtAadharCardNum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/aadhar_card_number"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/grey_7b"
+                android:textSize="@dimen/_14sdp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/blue_1c"
+            android:layout_marginTop="@dimen/_2sdp"
+            app:layout_constraintTop_toBottomOf="@id/viewAadharCardNum"
+            app:layout_constraintStart_toStartOf="@id/viewAadharCardNum"
+            app:layout_constraintEnd_toEndOf="@id/viewAadharCardNum"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/viewLicenceNum"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:passwordToggleEnabled="false"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            app:layout_constraintTop_toBottomOf="@id/view2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/black"
+            >
+
+            <com.prometteur.fooddeliveryboy.Utils.CustomeEditText
+                android:id="@+id/edtLicenceNum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/licence_number"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/grey_7b"
+                android:textSize="@dimen/_14sdp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View
+            android:id="@+id/view3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/blue_1c"
+            android:layout_marginTop="@dimen/_2sdp"
+            app:layout_constraintTop_toBottomOf="@id/viewLicenceNum"
+            app:layout_constraintStart_toStartOf="@id/viewLicenceNum"
+            app:layout_constraintEnd_toEndOf="@id/viewLicenceNum"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/viewVehicleType"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:passwordToggleEnabled="false"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            app:layout_constraintTop_toBottomOf="@id/view3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/black"
+            >
+
+            <com.prometteur.fooddeliveryboy.Utils.CustomeEditText
+                android:id="@+id/edtVehicleType"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/vehicle_type"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/grey_7b"
+                android:textSize="@dimen/_14sdp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/blue_1c"
+            android:layout_marginTop="@dimen/_2sdp"
+            app:layout_constraintTop_toBottomOf="@id/viewVehicleType"
+            app:layout_constraintStart_toStartOf="@id/viewVehicleType"
+            app:layout_constraintEnd_toEndOf="@id/viewVehicleType"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/viewVehicleNum"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:passwordToggleEnabled="false"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            app:layout_constraintTop_toBottomOf="@id/view4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/black"
+            >
+
+            <com.prometteur.fooddeliveryboy.Utils.CustomeEditText
+                android:id="@+id/edtVehicleNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/vehicle_number"
+                android:maxLines="1"
+                android:imeOptions="actionDone"
+                android:textColorHint="@color/grey_7b"
+                android:textSize="@dimen/_14sdp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View
+            android:id="@+id/view5"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/blue_1c"
+            android:layout_marginTop="@dimen/_2sdp"
+            app:layout_constraintTop_toBottomOf="@id/viewVehicleNum"
+            app:layout_constraintStart_toStartOf="@id/viewVehicleNum"
+            app:layout_constraintEnd_toEndOf="@id/viewVehicleNum"
+            />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/viewEmail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:passwordToggleEnabled="false"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            app:layout_constraintTop_toBottomOf="@id/view5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/black_65"
+            >
+
+            <com.prometteur.fooddeliveryboy.Utils.CustomeEditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/email"
+                android:textColor="@color/black_65"
+                android:maxLines="1"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/grey_7b"
+                android:textSize="@dimen/_14sdp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View
+            android:id="@+id/view6"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/blue_1c"
+            android:layout_marginTop="@dimen/_2sdp"
+            app:layout_constraintTop_toBottomOf="@id/viewEmail"
+            app:layout_constraintStart_toStartOf="@id/viewEmail"
+            app:layout_constraintEnd_toEndOf="@id/viewEmail"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/viewMobilNum"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:passwordToggleEnabled="false"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            app:layout_constraintTop_toBottomOf="@id/view6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/black"
+            >
+
+            <com.prometteur.fooddeliveryboy.Utils.CustomeEditText
+                android:id="@+id/edtMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:textColor="@color/black_65"
+                android:hint="@string/phone_number"
+                android:maxLines="1"
+                android:enabled="false"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:textColorHint="@color/grey_7b"
+                android:textSize="@dimen/_14sdp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <View
+            android:id="@+id/view7"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/blue_1c"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@id/viewMobilNum"
+            app:layout_constraintStart_toStartOf="@id/viewMobilNum"
+            app:layout_constraintEnd_toEndOf="@id/viewMobilNum"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <com.prometteur.fooddeliveryboy.Utils.CustomButton
+                android:id="@+id/btnUPDATE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/update"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp"
+                android:background="@drawable/bg_curved_black52"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@id/conlay1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/_20sdp"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
